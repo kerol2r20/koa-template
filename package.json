@@ -1,0 +1,18 @@
+{
+  "name": "koa-template",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "debug": "^2.6.6",
+    "koa": "^2.2.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-logger": "^2.0.1",
+    "koa-router": "^7.1.1",
+    "koa-session": "^5.0.0",
+    "koa-static": "^3.0.0",
+    "koa-views": "^6.0.2",
+    "pug": "^2.0.0-rc.1"
+  }
+}
