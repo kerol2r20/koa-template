@@ -3,12 +3,14 @@ const logger = require("koa-logger");
 const bodyParser = require("koa-bodyparser");
 const path = require("path");
 const views = require("koa-views");
+const session = require('koa-session');
 const router = require("./routes/index");
 
 const app = new koa();
 
 app.use(logger());
 app.use(bodyParser());
+app.use(session({}, app));
 app.use(require("koa-static")(path.join(__dirname, "/public")))
 app.use(views(path.join(__dirname, "/views"), {
     extension: "pug",
